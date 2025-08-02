@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary Colors */
+    --color-primary: #4f46e5; /* indigo-600 */
+    --color-primary-light: #818cf8; /* indigo-400 */
+    --color-primary-dark: #3730a3; /* indigo-800 */
+
+    /* Primary Color Scale */
+    --color-primary-50: #ebeafd; /* indigo-50 */
+    --color-primary-100: #d7d5fb; /* indigo-100 */
+    --color-primary-200: #b0abf7; /* indigo-200 */
+    --color-primary-300: #8982f3; /* indigo-300 */
+    --color-primary-400: #6158ef; /* indigo-400 */
+    --color-primary-500: #4f46e5; /* indigo-500 */
+    --color-primary-600: #2a20dc; /* indigo-600 */
+    --color-primary-700: #211aab; /* indigo-700 */
+    --color-primary-800: #18137a; /* indigo-800 */
+    --color-primary-900: #0f0c49; /* indigo-900 */
+
+    /* Neutral Colors */
+    --color-background: #f8fafc; /* slate-50 */
+    --color-surface: #ffffff; /* white */
+    --color-border: #e2e8f0; /* slate-200 */
+    --color-text-primary: #0f172a; /* slate-900 */
+    --color-text-secondary: #475569; /* slate-600 */
+    --color-text-tertiary: #94a3b8; /* slate-400 */
+
+    /* Semantic Colors */
+    --color-success: #10b981; /* emerald-500 */
+    --color-warning: #f59e0b; /* amber-500 */
+    --color-error: #f43f5e; /* rose-500 */
+    --color-info: #0ea5e9; /* sky-500 */
+  }
+
+  body {
+    @apply bg-background text-text-primary font-sans;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-sans font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-4 py-2 rounded-md font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+
+  .btn-primary {
+    @apply btn bg-primary text-white hover:bg-primary-600 focus:ring-primary;
+  }
+
+  .btn-secondary {
+    @apply btn bg-primary-100 text-primary-800 hover:bg-primary-200 focus:ring-primary;
+  }
+
+  .btn-outline {
+    @apply btn border border-primary text-primary hover:bg-primary hover:text-white focus:ring-primary;
+  }
+
+  .btn-ghost {
+    @apply btn text-primary hover:bg-primary-50 focus:ring-primary;
+  }
+
+  .card {
+    @apply bg-surface rounded-lg shadow-sm border border-border overflow-hidden;
+  }
+}
