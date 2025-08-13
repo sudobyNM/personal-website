@@ -38,16 +38,20 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
-const button = document.querySelector('#menu-btn');
-const menu = document.querySelector('#menu');
-
+const button = document.querySelector("#menu-btn");
+const menu = document.querySelector("#menu");
 
 // Hide menu on outside click
-document.addEventListener('click', (e) => {
-    const isClickInside = menu.contains(e.target) || button.contains(e.target);
-    if (!isClickInside) {
-        menu.classList.add('hidden');
-    }
+document.addEventListener("click", (e) => {
+  const isClickInside = menu.contains(e.target) || button.contains(e.target);
+  if (!isClickInside) {
+    menu.classList.add("hidden");
+  }
 });
 
+// Close sidebar on link click (mobile)
+document.querySelectorAll("#menu a").forEach((link) => {
+  link.addEventListener("click", () => {
+    document.getElementById("menu").classList.add("hidden");
+  });
+});
