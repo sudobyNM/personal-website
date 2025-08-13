@@ -3,36 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
     <title>Portfolio - Home</title>
     
     <!-- Resource hints for better performance -->
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="public/b.webp" as="image" type="image/webp">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"></noscript>
 
-    <style>
-      /* Critical CSS for LCP optimization */
-      .hero-bg {
-        background-image: url("public/b.webp");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        will-change: transform;
-        transform: translateZ(0);
-        min-height: 100vh;
-      }
-      body {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        font-display: swap;
-      }
-    </style>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/main.min.css" />
-    <link rel="icon" href="public/dev-icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="icon" href="/public/dev-icon.svg" type="image/svg+xml" />
 
 
 
@@ -51,7 +31,7 @@
             href="/index.html"
             class="flex items-center space-x-1 cursor-pointer"
           >
-            <img src="public/dev-icon.svg" alt="logo" class="w-12 h-11" />
+            <img src="/public/dev-icon.svg" alt="logo" class="w-12 h-11" />
           </a>
 
           <!-- Main Navigation -->
@@ -216,7 +196,7 @@
             <div class="card group transition-all duration-300 proj-card">
               <div class="relative h-56 overflow-hidden">
                 <img
-                  src="public/code.webp"
+                  src="/public/code.webp"
                   alt="code editor"
                   class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"
@@ -331,7 +311,7 @@
             <div class="card group transition-all duration-300 proj-card">
               <div class="relative h-56 overflow-hidden">
                 <img
-                  src="public/poke.webp"
+                  src="/public/poke.webp"
                   alt="pokemon app"
                   class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"
@@ -454,11 +434,11 @@
                 HTML, CSS, JS, React, Tailwind, Framer Motion
               </p>
               <div class="flex flex-row justify-center mt-auto gap-2 pt-2">
-                <img src="public/icons8-html.svg" alt="icon" />
-                <img src="public/icons8-css.svg" alt="icon" />
-                <img src="public/icons8-js.svg" alt="icon" />
-                <img src="public/icons8-react.svg" alt="icon" />
-                <img src="public/icons8-tailwind.svg" alt="icon" />
+                <img src="/public/icons8-html.svg" alt="icon" />
+                <img src="/public/icons8-css.svg" alt="icon" />
+                <img src="/public/icons8-js.svg" alt="icon" />
+                <img src="/public/icons8-react.svg" alt="icon" />
+                <img src="/public/icons8-tailwind.svg" alt="icon" />
               </div>
             </div>
 
@@ -491,8 +471,8 @@
                 NodeJS, ExpressJS, RestAPIs
               </p>
               <div class="flex flex-row justify-center mt-auto gap-2 pt-2">
-                <img src="public/icons8-node.svg" alt="icon" />
-                <img src="public/icons8-express.svg" alt="icon" />
+                <img src="/public/icons8-node.svg" alt="icon" />
+                <img src="/public/icons8-express.svg" alt="icon" />
               </div>
             </div>
 
@@ -543,9 +523,9 @@
                 Git, Docker, CI/CD, Netlify, Vite, NPM, VS Code, CLI
               </p>
               <div class="flex flex-row justify-center mt-auto gap-2 pt-2">
-                <img src="public/icons8-git.svg" alt="icon" />
-                <img src="public/icons8-docker.svg" alt="icon" />
-                <img src="public/icons8-vite.svg" alt="icon" />
+                <img src="/public/icons8-git.svg" alt="icon" />
+                <img src="/public/icons8-docker.svg" alt="icon" />
+                <img src="/public/icons8-vite.svg" alt="icon" />
               </div>
             </div>
 
