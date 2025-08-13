@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
     <title>About - Portfolio</title>
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/main.css" />
-    <link rel="icon" href="/public/dev-icon.svg" type="image/svg+xml" />
+    <link rel="icon" href="../public/dev-icon.svg" type="image/svg+xml" />
   </head>
   <body class="bg-background min-h-screen">
     <!-- Header/Navigation -->
@@ -17,7 +18,7 @@
         <div class="flex justify-between items-center h-16">
           <!-- Logo -->
           <a href="/index.html" class="flex items-center space-x-2">
-            <img src="/public/dev-icon.svg" alt="logo" class="w-12 h-11" />
+            <img src="../public/dev-icon.svg" alt="logo" class="w-12 h-11" />
           </a>
 
           <!-- Main Navigation -->

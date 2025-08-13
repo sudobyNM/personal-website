@@ -14,10 +14,12 @@ html {
 }
 
 .hero-bg {
-  background-image: url("/public/b.webp");
+  background-image: url("../public/b.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 /* Ensure hero background picture element displays correctly */
