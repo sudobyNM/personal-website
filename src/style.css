@@ -190,7 +190,7 @@
 }
 
 .bio-bg {
-  background-image: url("../public/a.jpg");
+  background-image: url("/b.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
