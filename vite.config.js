@@ -18,9 +18,9 @@ export default defineConfig({
     emptyOutDir: true,
     rollupOptions: {
       input: {
-        main: resolve(__dirname, "src/index.html"),
-        about: resolve(__dirname, "src/about.html"),
-        contact: resolve(__dirname, "src/contact.html"),
+        main: "index.html",
+        about: "about.html",
+        contact: "contact.html",
       },
     },
   },
