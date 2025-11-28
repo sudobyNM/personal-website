@@ -3,6 +3,7 @@ import { defineConfig } from "vite";
 import legacy from "@vitejs/plugin-legacy";
 import { fileURLToPath } from "url";
 import { dirname, resolve } from "path";
+import { viteStaticCopy } from "vite-plugin-static-copy";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -32,5 +33,19 @@ export default defineConfig({
      port: 3000,
      open: true,
    },
+   plugins: [
+     legacy({
+       targets: ["defaults", "not IE 11"],
+     }),
+     viteStaticCopy({
+       targets: [
+         {
+           src: resolve(__dirname, "public/_headers"),
+           dest: "",
+         },
+       ],
+     }),
+   ],
  });
+ 
  // ...existing code...
