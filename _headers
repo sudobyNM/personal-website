@@ -1,0 +1,17 @@
+# Set security headers for the application
+Content-Security-Policy: 
+default-src 'self'; 
+style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; 
+font-src 'self' https://fonts.gstatic.com; 
+script-src 'self'; 
+frame-ancestors 'none';
+
+# Set X-Frame-Options to prevent clickjacking
+X-Frame-Options: DENY;
+
+
+# Set X-Content-Type-Options to prevent MIME type sniffing
+X-Content-Type-Options: nosniff
+
+# Set Referrer-Policy to control how much referrer information is sent
+Referrer-Policy: strict-origin-when-cross-origin
